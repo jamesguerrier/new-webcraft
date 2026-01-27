@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Website</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="nav-container">
+        <!-- Logo -->
+        <div class="logo">WebCraft</div>
+
+        <!-- Navigation -->
+        <nav class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- CTA -->
+        <a href="#contact" class="btn-primary">Get Started</a>
+
+        <!-- Mobile Menu Icon -->
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <!-- Desktop Video -->
+      <video class="hero-video desktop-video" autoplay muted loop playsinline>
+        <source src="assets/16_9.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Mobile Video -->
+      <video class="hero-video mobile-video" autoplay muted loop playsinline>
+        <source src="assets/9_16.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Overlay -->
+      <div class="hero-overlay"></div>
+
+      <!-- Content -->
+      <div class="hero-content">
+        <h1>Modern Websites Built to Grow Your Business</h1>
+        <p>
+          Clean, responsive, and conversion-focused web solutions for modern
+          brands.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="btn-primary">Get a Free Quote</a>
+          <a href="#work" class="btn-outline">View Our Work</a>
+        </div>
+      </div>
+    </section>
+    <!-- TRUST SECTION -->
+    <section class="trust">
+      <div class="trust-track">
+        <div class="trust-item">⭐ Trusted by 50+ Businesses</div>
+        <div class="trust-separator">•</div>
+
+        <div class="trust-item">📱 100% Responsive Design</div>
+        <div class="trust-separator">•</div>
+
+        <div class="trust-item">⚡ Fast & SEO Optimized</div>
+        <div class="trust-separator">•</div>
+
+        <div class="trust-item">🔒 Secure & Reliable Code</div>
+        <div class="trust-separator">•</div>
+
+        <div class="trust-item">🚀 Modern Tech Stack</div>
+
+        <!-- duplicate for seamless loop -->
+        <div class="trust-item">⭐ Trusted by 50+ Businesses</div>
+        <div class="trust-separator">•</div>
+
+        <div class="trust-item">📱 100% Responsive Design</div>
+        <div class="trust-separator">•</div>
+
+        <div class="trust-item">⚡ Fast & SEO Optimized</div>
+        <div class="trust-separator">•</div>
+
+        <div class="trust-item">🔒 Secure & Reliable Code</div>
+        <div class="trust-separator">•</div>
+
+        <div class="trust-item">🚀 Modern Tech Stack</div>
+      </div>
+    </section>
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+      <div class="container">
+        <header class="section-header">
+          <h2>Our Services</h2>
+          <p>
+            We design and develop high-performance websites that help businesses
+            grow, convert, and stand out online.
+          </p>
+        </header>
+
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <article class="service-card">
+            <img src="assets/design-1.jpg" alt="Web Design" />
+            <div class="service-content">
+              <div class="service-icon">
+                <!-- SVG -->
+                <svg viewBox="0 0 24 24">
+                  <path d="M4 5h16v14H4z" />
+                  <path d="M4 9h16" />
+                </svg>
+              </div>
+              <h3>Web Design</h3>
+              <p>Modern, clean designs built for trust and conversions.</p>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="service-card">
+            <img src="assets/design-2.png" alt="Web Development" />
+            <div class="service-content">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M16 18l6-6-6-6" />
+                  <path d="M8 6l-6 6 6 6" />
+                </svg>
+              </div>
+              <h3>Web Development</h3>
+              <p>Fast, scalable, and SEO-optimized code.</p>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="service-card">
+            <img src="assets/hero-section.png.png" alt="Responsive Design" />
+            <div class="service-content">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24">
+                  <rect x="3" y="4" width="18" height="14" rx="2" />
+                  <path d="M8 20h8" />
+                </svg>
+              </div>
+              <h3>Responsive Design</h3>
+              <p>Perfect experience across mobile, tablet, and desktop.</p>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="service-card">
+            <img
+              src="assets/to-travel-1677347_1280.jpg"
+              alt="Maintenance & Support"
+            />
+            <div class="service-content">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 2v4" />
+                  <path d="M12 18v4" />
+                  <path d="M4.93 4.93l2.83 2.83" />
+                  <path d="M16.24 16.24l2.83 2.83" />
+                  <circle cx="12" cy="12" r="4" />
+                </svg>
+              </div>
+              <h3>Maintenance & Support</h3>
+              <p>Ongoing updates, fixes, and performance improvements.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+      <div class="about-container">
+        <!-- Text -->
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p class="about-lead">
+            We help businesses grow online through modern, high-performing
+            websites built with strategy, clarity, and purpose.
+          </p>
+          <p>
+            Our mission is simple: create clean, responsive, and
+            conversion-focused digital experiences that build trust and turn
+            visitors into customers. Every project is crafted with performance,
+            usability, and long-term growth in mind.
+          </p>
+        </div>
+
+        <!-- Image -->
+        <div class="about-image">
+          <img
+            src="assets/to-travel-1677347_1280.jpg"
+            alt="About our business"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- PROCESS SECTION -->
+    <section class="process" id="process">
+      <div class="container">
+        <header class="section-header">
+          <h2>Our Process</h2>
+          <p>
+            A simple, transparent workflow designed to deliver results with
+            clarity and confidence.
+          </p>
+        </header>
+
+        <div class="timeline">
+          <span class="timeline-line"></span>
+
+          <!-- Step 1 -->
+          <div class="timeline-item right">
+            <div class="timeline-card">
+              <img src="assets/design-1.jpg" alt="Discovery & Planning" />
+              <span class="step-number">1</span>
+              <h3>Discovery & Planning</h3>
+              <p>
+                We understand your goals, audience, and requirements to build a
+                strong foundation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="timeline-item left">
+            <div class="timeline-card">
+              <img src="assets/design-2.png" alt="Design & Development" />
+              <span class="step-number">2</span>
+              <h3>Design & Development</h3>
+              <p>
+                We design and develop a modern, responsive solution tailored to
+                your brand.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="timeline-item right">
+            <div class="timeline-card">
+              <img
+                src="assets/hero-section.png.png"
+                alt="Review & Optimization"
+              />
+              <span class="step-number">3</span>
+              <h3>Review & Optimization</h3>
+              <p>
+                We refine, test, and optimize performance for the best user
+                experience.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="timeline-item left">
+            <div class="timeline-card">
+              <img
+                src="assets/to-travel-1677347_1280.jpg"
+                alt="Launch & Support"
+              />
+              <span class="step-number">4</span>
+              <h3>Launch & Support</h3>
+              <p>
+                We launch confidently and provide ongoing support and
+                improvements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <header class="section-header">
+          <h2>What Clients Say</h2>
+          <p>Real feedback from businesses we’ve helped grow online.</p>
+        </header>
+
+        <div class="testimonials-grid">
+          <!-- Card 1 -->
+          <div class="testimonial-card indigo-1">
+            <div class="card-inner">
+              <div class="card-face card-front">
+                <img src="assets/women-3588527_1280.jpg" alt="Client photo" />
+                <h3>Sarah Mitchell</h3>
+                <span>Founder, Bright Studio</span>
+                <p>
+                  “The website completely transformed our online presence.
+                  Clean, fast, and beautifully designed.”
+                </p>
+              </div>
+
+              <div class="card-face card-back">
+                <img src="assets/beard-1845166_1280.jpg" alt="Client photo" />
+                <h3>Sarah Mitchell</h3>
+                <span>Founder, Bright Studio</span>
+                <p>
+                  “The website completely transformed our online presence.
+                  Clean, fast, and beautifully designed.”
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card indigo-2">
+            <div class="card-inner">
+              <div class="card-face card-front">
+                <img src="assets/women-3588527_1280.jpg" alt="Client photo" />
+                <h3>James Carter</h3>
+                <span>CEO, NovaTech</span>
+                <p>
+                  “Professional, responsive, and focused on results. Our
+                  conversions increased immediately.”
+                </p>
+              </div>
+
+              <div class="card-face card-back">
+                <img src="assets/women-3588527_1280.jpg" alt="Client photo" />
+                <h3>James Carter</h3>
+                <span>CEO, NovaTech</span>
+                <p>
+                  “Professional, responsive, and focused on results. Our
+                  conversions increased immediately.”
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card indigo-3">
+            <div class="card-inner">
+              <div class="card-face card-front">
+                <img
+                  src="assets/expensive-1742057_1280.jpg"
+                  alt="Client photo"
+                />
+                <h3>Emily Rodriguez</h3>
+                <span>Marketing Lead, Pulse Co</span>
+                <p>
+                  “A smooth process from start to finish. The final result
+                  exceeded our expectations.”
+                </p>
+              </div>
+
+              <div class="card-face card-back">
+                <img src="assets/beard-1845166_1280.jpg" alt="Client photo" />
+                <h3>Emily Rodriguez</h3>
+                <span>Marketing Lead, Pulse Co</span>
+                <p>
+                  “A smooth process from start to finish. The final result
+                  exceeded our expectations.”
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA SECTION -->
+    <section class="cta">
+      <div class="cta-inner">
+        <h2>Ready to Elevate Your Online Presence?</h2>
+        <p>
+          Let’s build a modern, high-performing website that attracts customers
+          and grows your business.
+        </p>
+        <a href="#contact" class="cta-btn">Let’s Work Together</a>
+      </div>
+    </section>
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <!-- Image / Glass Panel -->
+        <div class="contact-image">
+          <div class="glass-card">
+            <h3>Let’s Talk</h3>
+            <p>
+              We’d love to hear about your project and how we can help bring it
+              to life.
+            </p>
+
+            <div class="contact-info">
+              <span>📧 hello@yourbusiness.com</span>
+              <span>📞 +1 (555) 123-4567</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form">
+          <h2>Contact Us</h2>
+
+          <form>
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" placeholder="Your full name" />
+            </div>
+
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="you@example.com" />
+            </div>
+
+            <div class="form-group">
+              <label>Message</label>
+              <textarea
+                rows="5"
+                placeholder="Tell us about your project..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="contact-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <h2>DevMastersHub</h2>
+          <p>
+            Helping businesses grow online with modern design & development.
+          </p>
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Process</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook">🌐</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="LinkedIn">💼</a>
+            <a href="#" aria-label="Instagram">📸</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p>© 2026 DevMastersHub. All rights reserved.</p>
+      </div>
+    </footer>
+    <button id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
