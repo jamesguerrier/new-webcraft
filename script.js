@@ -10,18 +10,53 @@ window.addEventListener("scroll", () => {
 // Mobile menu toggle
 menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
+  menuToggle.classList.toggle("active");
 });
 
-// Trust section fade-up
+// Close mobile menu when clicking on a link
+const navLinksItems = document.querySelectorAll(".nav-links a");
+navLinksItems.forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+    menuToggle.classList.remove("active");
+  });
+});
+
+// Trust section animated counters
 const trustSection = document.querySelector(".trust");
+const trustNumbers = document.querySelectorAll(".trust-number");
+
+let hasAnimated = false;
+
+const animateCounter = (element) => {
+  const target = parseInt(element.getAttribute("data-target"));
+  const duration = 2000; // 2 seconds
+  const increment = target / (duration / 16); // 60fps
+  let current = 0;
+
+  const updateCounter = () => {
+    current += increment;
+    if (current < target) {
+      element.textContent = Math.floor(current);
+      requestAnimationFrame(updateCounter);
+    } else {
+      element.textContent = target;
+    }
+  };
+
+  updateCounter();
+};
 
 const observer = new IntersectionObserver(
   ([entry]) => {
-    if (entry.isIntersecting) {
-      trustSection.classList.add("visible");
+    if (entry.isIntersecting && !hasAnimated) {
+      hasAnimated = true;
+      trustNumbers.forEach((number) => {
+        animateCounter(number);
+      });
     }
   },
-  { threshold: 0.3 },
+  { threshold: 0.3 }
 );
 
 observer.observe(trustSection);
